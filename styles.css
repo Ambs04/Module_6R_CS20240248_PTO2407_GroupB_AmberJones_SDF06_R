@@ -18,32 +18,90 @@ body {
     padding-bottom: 3rem;
 }
 
-img {
-    display: block;
-}
+
 
 .container{
-    display:grid;
-    width: 1080px;
-    height: 450px;
-    border: 3px solid blue;
+    display: flex;
+    position: absolute;
+    width:926px;
+    height:300px;
+    
 }
 
-.profile-img {
-   float: right;
-   border-radius: 50%;
-   border: 6px solid darkolivegreen;
-    width: 100px;
-    height: 45px;
-    padding: 1em;
-    margin: 5px;
-
+.profile-image{
+    justify-content: left;
+    
 }
 
-.profile-user-settings, .profile-stats, .profile-bio{
-    float: left;
-    padding: 1em;
-    margin: 5px;
-    justify-items: flex-end;
+
+.profile-image > .img{
+    float:left;
+    width: 50px;
+    height: 40px;
+    border: 5px solid #506b43;
+    border-radius: 50%;
 }
 
+.profile-user-settings{
+    display:inline-flex
+}
+
+.profile-info{
+    flex-wrap: wrap;
+    float: right;
+    
+}
+
+.profile-user-settings{
+    position:absolute;
+    margin: -200px 190px;
+}
+
+
+
+
+
+
+
+/*.main-container{
+    height: 900px ;
+}*/
+
+
+/*.gallery{
+    display: grid;
+    width: repeat(150px, 3fr);
+    height: 900px;
+    grid-template-areas:
+    "r1,r1,r1",
+    "r2,r2,r2",
+    "r3,r3,r3",
+    "r4,r4,r4";
+    grid-gap:6px;
+    object-fit: fit;
+}
+
+.gallery-item1{
+    grid-area:r1;
+    height: 300px;
+}
+
+.gallery-item2{
+    grid-area:r2;
+    height: 200px;
+}
+
+.gallery-item3{
+    grid-area:r3;
+    height: 200px;
+}
+
+.gallery-item4{
+    grid-area:r4;
+    height: 200px;
+}
+
+.gallery-image{
+    height:150px;
+    width: 70px;
+}*/
