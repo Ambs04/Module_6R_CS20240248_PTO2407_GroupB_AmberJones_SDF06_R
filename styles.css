@@ -26,33 +26,32 @@ body {
 
     justify-content: center;
     align-items:center;
-    max-height: 300px;
-    max-width: 100vw;
     grid-template-columns: 1fr 1fr 1fr;  
     grid-template-rows: 1fr 1fr 1fr; 
     gap: 0px 0px; 
-    grid-template-areas: 
+   /* grid-template-areas: 
       "i U U"
       "i I I"
       "i b b"; 
-    justify-items: stretch; 
+    justify-items: stretch; */
 }
 
 .profile-image{
-    
-    grid-area: i;
-    grid-row: span3;
+    width: 300px;
+    height: 300px;
+   /* grid-area: i;
+    grid-row: span3;*/
 }
 
 .profile-image > img{
-    height: 200px;
-    width:200px;
+    height: 300px;
+    width:300px;
     border: 8px solid #506b43;
     border-radius: 50%;
 }
 
 
-.profile-user-settings{
+/*.profile-user-settings{
     grid-area:u;
     grid-column: span2;
 }
@@ -66,53 +65,48 @@ body {
 .profile-bio{
     grid-area:b;
     grid-column: span2;
-}
-
-
-.profile-username{
-    grid-area: u;
-}
-
-.btn profile-edit-btn{
-    grid-area: b;
-}
-
-.btn profile-settings-btn{
-    grid-area: s;
-}
-
-.profile-stats{
-    grid-area:p;
-
-}
-
-.profile-bio{
-    grid-area:a;
-}
+}*/
 
 
 /*MAIN SECTION*/
 
+.main{
+    max-height:800px;
+    width: 100vw;
+}
+
 .main-container{
     display: flex;
-    justify-content: space-around;
-    flex-wrap:wrap;
-    
+    justify-content: center;
+    align-content: center;
+    flex-wrap:nowrap;
+    max-width: 100vw;
+    max-height: 900px;
+    flex-direction: column;
 }
 
 .gallery{
-    width:150px;
+    display:flex;
+    max-height: 900px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 30px;
+}
+
+.gallery-item{
     height:300px;
-    display:grid;
-    justify-items:center;
-    align-content: center;
-    
+    width: 300px;
 }
 
 .gallery-image{
-    
-    height:100px;
+    width:300px;
+    height:200px;
     object-fit:cover;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -135,13 +129,22 @@ body {
     margin: auto 0px;
 }*/
 
+.load{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .loader{
+    
+    margin:auto;
     border: 12px solid grey;
     border-radius:50%;
     width: 100px;
     height: 100px;
     border-top: 12px solid lightgray;
     animation: spin 2.5s linear infinite;
+    
 }
 
 @keyframes spin {
